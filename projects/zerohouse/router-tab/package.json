@@ -1,0 +1,27 @@
+{
+  "name": "@zerohouse/router-tab",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/cdk": "^6.3.1",
+    "@angular/material": "^6.3.1",
+    "@angular/router": "^6.0.0-rc.0 || ^6.0.0"
+  },
+  "description": "router-tab directive for mat-tabs",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/zerohouse/router-tab.git"
+  },
+  "keywords": [
+    "router",
+    "material",
+    "tabs"
+  ],
+  "author": "parksungho86@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zerohouse/router-tab/issues"
+  },
+  "homepage": "https://github.com/zerohouse/router-tab#readme"
+}
