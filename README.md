@@ -36,3 +36,4 @@ Router-Tab Directive
       <mat-tab label="Page B" routerLink="b"></mat-tab>
       <mat-tab label="Page C" routerLink="c"></mat-tab>
     </mat-tab-group>
+    <router-outlet></router-outlet>
