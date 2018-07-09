@@ -29,9 +29,10 @@ Router-Tab Directive
     }
     
     
-### Usage routerTab=[tabIndex]
-    <mat-tab-group>
-      <mat-tab label="Page A" routerLink="a" [routerTab]="0"></mat-tab>
-      <mat-tab label="Page B" routerLink="b" [routerTab]="1"></mat-tab>
-      <mat-tab label="Page C" routerLink="c" [routerTab]="2"></mat-tab>
+### Usage routerTabs On MatTabGroup
+        
+    <mat-tab-group routerTabs>
+      <mat-tab label="Page A" routerLink="a"></mat-tab>
+      <mat-tab label="Page B" routerLink="b"></mat-tab>
+      <mat-tab label="Page C" routerLink="c"></mat-tab>
     </mat-tab-group>

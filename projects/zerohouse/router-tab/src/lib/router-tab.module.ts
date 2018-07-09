@@ -1,11 +1,11 @@
 import {NgModule} from '@angular/core';
-import {RouterTabDirective} from './router-tab.directive';
-import {RouterModule} from '@angular/router';
+import {RouterTab} from './router-tab.directive';
 import {MatTabsModule} from '@angular/material';
+import {RouterTabs} from './router-tabs.directive';
 
 @NgModule({
-  declarations: [RouterTabDirective],
-  exports: [MatTabsModule, RouterTabDirective]
+  declarations: [RouterTab, RouterTabs],
+  exports: [MatTabsModule, RouterTabs, RouterTab]
 })
 export class RouterTabModule {
 }
