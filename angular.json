@@ -121,6 +121,45 @@
           }
         }
       }
+    },
+    "@zerohouse/router-tab": {
+      "root": "projects/zerohouse/router-tab",
+      "sourceRoot": "projects/zerohouse/router-tab/src",
+      "projectType": "library",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/zerohouse/router-tab/tsconfig.lib.json",
+            "project": "projects/zerohouse/router-tab/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/zerohouse/router-tab/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/zerohouse/router-tab/src/test.ts",
+            "tsConfig": "projects/zerohouse/router-tab/tsconfig.spec.json",
+            "karmaConfig": "projects/zerohouse/router-tab/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/zerohouse/router-tab/tsconfig.lib.json",
+              "projects/zerohouse/router-tab/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "router-tab"
