@@ -6,12 +6,14 @@ Router-Tab Directive
     
     npm install @zerohouse/route-tab --save
     
-### Import
+### Import RouterTabModule
     @NgModule({
       declarations: [
         AppComponent, PageAComponent, PageBComponent, PageCComponent
       ],
       imports: [
+        RouterTabModule, // this module
+    
         RouterModule.forRoot([
           {path: '', pathMatch: 'full', redirectTo: 'a'},
           {path: 'a', component: PageAComponent},
@@ -19,7 +21,6 @@ Router-Tab Directive
           {path: 'c', component: PageCComponent}
         ]),
         BrowserModule,
-        RouterTabModule,
         BrowserAnimationsModule
       ],
       providers: [],
@@ -29,7 +30,7 @@ Router-Tab Directive
     }
     
     
-### Usage routerTabs On MatTabGroup
+### use routerTabs On MatTabGroup
         
     <mat-tab-group routerTabs>
       <mat-tab label="Page A" routerLink="a"></mat-tab>
