@@ -4,7 +4,7 @@ Router-Tab Directive
 
 ### Install
     
-    npm install @zerohouse/route-tab --save
+    npm install @zerohouse/router-tab --save
     
 ### Import RouterTabModule
     @NgModule({
